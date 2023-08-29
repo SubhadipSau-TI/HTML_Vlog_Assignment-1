@@ -25,8 +25,7 @@ a {
   color: #1792d2;
 }
 
-a:hover,
-a:focus {
+a:hover {
   color: red;
 }
 
