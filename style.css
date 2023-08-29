@@ -1,191 +1,194 @@
 body {
-    margin: 0;
-    font-family:'Times New Roman', Times, serif;
-    font-size: 1.125rem;
-    font-weight: 300;
-    background-color: beige;
+  margin: 0;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.125rem;
+  font-weight: 300;
+  background-color: white;
 }
-h1{
-    font-family: -webkit-body;
-    font-weight: bold;
-    color:red
+h1 {
+  font-family: -webkit-body;
+  font-weight: bold;
+  color: chocolate;
 }
 h2,
 h3 {
-    font-family: 'Lora', serif;
-    font-weight: 400;
-    color: #143774;
-    margin-top: 0;
+  font-family: "Lora", serif;
+  font-weight: 400;
+  color: black;
+  margin-top: 0;
 }
-h1{
+h1 {
   font-size: 2rem;
   margin: 0;
 }
 a {
-    color: #1792d2;
+  color: #1792d2;
 }
 
 a:hover,
 a:focus {
-    color: #143774;
+  color: red;
 }
 
 strong {
-    font-weight: 700;
+  font-weight: 700;
 }
-.subtitle{
+.subtitle {
   font-size: 0.85rem;
   font-weight: 700;
   margin: 0;
-  color: #1792d2;
+  color: darkgoldenrod;
   letter-spacing: 0.05em;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family:serif;
 }
 .article-title {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 .article-read-more,
 .article-info {
-    font-size: .875rem;
+  font-size: 0.875rem;
 }
 
 .article-read-more {
-    color: #1792d2;
-    text-decoration: none;
-    font-weight: 700;
+  color: #1792d2;
+  text-decoration: none;
+  font-weight: 700;
 }
 .article-read-more:hover,
 .article-read-more:focus {
-    color: #143774;
-    text-decoration: underline;
+  color: #143774;
+  text-decoration: underline;
 }
 .article-info {
-    margin: 2em 0;
+  margin: 2em 0;
 }
-header{
+header {
   padding: 2em 0;
   text-align: center;
-  background: wheat;
+  background: white;
   font-family: sans-serif;
   margin-bottom: 3em;
 }
-.container-flex{
+.container-flex {
   max-width: 70vw;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   margin-bottom: 1em;
 }
-nav ul{
+nav ul {
   display: flex;
   justify-content: center;
   list-style: none;
   padding: 0;
 }
-nav li{
+nav li {
   margin: 0 1em;
 }
-nav a{
+nav a {
   text-decoration: none;
-  color: #707070;
-  font-weight: 700; 
+  color:black;
+  font-weight: 700;
   padding: 0.25em 0;
 }
 
 nav a:hover,
-nav a:focus{
-  color: #143774;
+nav a:focus {
   border-bottom: 1px solid black;
-  transition: .3s ease;
+  transition: 0.3s ease;
 }
 
-img{
+img {
   max-width: 100%;
   display: block;
   margin-bottom: 30px;
 }
-main{
+main {
   max-width: 75%;
 }
-.article-body{
+.article-body {
   width: 100%;
   text-align: justify;
 }
-.sidebar{
+.sidebar {
   max-width: 23%;
 }
 footer {
-    background: wheat;
-    color: black;
-    text-align: center;
-    padding: 3em 0;
+  background:beige;
+  color: black;
+  text-align: center;
+  padding: 3em 0;
 }
-footer a{
+footer a {
   text-decoration: none;
   color: white;
 }
-footer a:hover{
+footer a:hover {
   text-decoration: underline;
   color: white;
 }
-@media (max-width:1050px){
-  .container-flex{
+@media (max-width: 1050px) {
+  .container-flex {
     flex-direction: column;
   }
-  .site-title, .subtitle{
+  .site-title,
+  .subtitle {
     width: 100%;
   }
-  main{
+  main {
     max-width: 100%;
   }
-  .sidebar{
+  .sidebar {
     max-width: 100%;
   }
-  
 }
-@media (max-width: 500px){
-  nav ul{
+@media (max-width: 500px) {
+  nav ul {
     display: flex;
     flex-direction: column;
   }
-  nav li{
+  nav li {
     margin: 0.5em 0;
   }
 }
 
 /* articles */
 .article-featured {
-    border-bottom: #707070 1px solid;
-    padding-bottom: 2em;
-    margin-bottom: 2em;
+  border-bottom: #707070 1px solid;
+  padding-bottom: 2em;
+  margin-bottom: 2em;
 }
 .article-recent {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 2em;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2em;
 }
 
 .article-recent-main {
-    order: 2;
+  order: 2;
 }
 
 .article-recent-secondary {
-    order: 1;
+  order: 1;
 }
 
 @media (min-width: 675px) {
-    .article-recent {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    
-    .article-recent-main {
-        width: 68%;
-    }
-    
-    .article-recent-secondary {
-        width: 30%;
-    }
+  .article-recent {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .article-recent-main {
+    width: 68%;
+  }
+
+  .article-recent-secondary {
+    width: 30%;
+  }
 }
 
+.widget-recent-post-title {
+  color: inherit;
+  text-decoration: none;
+}
