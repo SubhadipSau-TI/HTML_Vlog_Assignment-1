@@ -9,6 +9,7 @@ h1 {
   font-family: -webkit-body;
   font-weight: bold;
   color: chocolate;
+  text-decoration: underline;
 }
 h2,
 h3 {
@@ -21,12 +22,10 @@ h1 {
   font-size: 2rem;
   margin: 0;
 }
-a {
-  color: #1792d2;
-}
 
-a:hover {
-  color: red;
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
 strong {
@@ -70,32 +69,24 @@ header {
   margin-bottom: 3em;
 }
 .container-flex {
-  max-width: 70vw;
+  max-width: 90vw;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   margin-bottom: 1em;
 }
-nav ul {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  padding: 0;
-}
-nav li {
-  margin: 0 1em;
-}
+
 nav a {
   text-decoration: none;
   color:black;
-  font-weight: 700;
+  font-weight: 550;
   padding: 0.25em 0;
 }
 
 nav a:hover,
 nav a:focus {
-  border-bottom: 1px solid black;
-  transition: 0.3s ease;
+  color: red;
+  transition: 0.1s ease;
 }
 
 img {
@@ -127,7 +118,7 @@ footer a:hover {
   text-decoration: underline;
   color: white;
 }
-@media (max-width: 1050px) {
+@media (max-width: 700px) {
   .container-flex {
     flex-direction: column;
   }
